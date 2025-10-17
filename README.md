@@ -11,14 +11,13 @@ A modular React implementation of the classic 2048 game. Play on board sizes fro
 - On-screen keypad arrow buttons
 - Dynamic restart and board resizing
 - Responsive beige-themed design
-- Pure functional game logic for easy testing and extension
-
 ---
 
 ## Installation
 
 1. Clone the repository:
 git clone https://github.com/v-v-sumanth-kumar/2048_Game.git
+
 cd 2048_Game
 
 
@@ -76,4 +75,5 @@ index.css # Base CSS
 You can deploy this app easily on hosting platforms such as:
 
 - **Vercel:** Connect your GitHub repo and click "Deploy"; a public URL will be provided.
+- **Live Demo:** Anyone can play the game at [https://2048-game-nu-three.vercel.app/](https://2048-game-nu-three.vercel.app/)
 
