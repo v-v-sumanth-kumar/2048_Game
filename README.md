@@ -49,18 +49,24 @@ Open your browser and visit: [http://localhost:3000](http://localhost:3000)
 ## Implementation Details
 
 - **React** framework with modular structure:
+- Directory Structure as follows
+
+```
 src/
-components/
-Board.js # Board rendering
-Controls.js # On-screen keypad arrow buttons
-Controls.css # Styles for controls
-Tile.js # Individual tile display
-utils/
-utils.js # Functional game logic (slide, merge, game over detection)
-App.js # Main component managing state and layout
-App.css # Global styles and layout
-index.js # React app entry point
-index.css # Base CSS
+├── components/
+│   ├── Board.js     # Renders the game board grid
+│   ├── Controls.js  # GUI keypad arrow buttons for moves
+│   ├── Controls.css # Styles for keypad controls
+│   └── Tile.js      # Styles for keypad controls
+├── utils/
+│   └── utils.js     # Functional game logic (slide, merge, spawn, game-over)
+├── App.js           # Main component: state, layout, and integration
+├── App.css
+├── index.js
+└── index.css
+```
+
+
 
 - Uses React hooks (`useState`, `useEffect`) for state management.
 - CSS grid is used for flexible board size rendering.
