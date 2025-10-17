@@ -15,13 +15,13 @@ A modular React implementation of the classic 2048 game. Play on board sizes fro
 
 ## Installation
 
-1. Clone the repository:
+1. Clone the repository using following commands:
  - git clone https://github.com/v-v-sumanth-kumar/2048_Game.git
  - cd 2048_Game
 
 
 2. Install dependencies:
-npm install
+ - npm install
 
 
 ---
@@ -29,7 +29,7 @@ npm install
 ## Running the Game
 
 Start the development server:
-npm start
+ - npm start
 
 Open your browser and visit: [http://localhost:3000](http://localhost:3000)
 
