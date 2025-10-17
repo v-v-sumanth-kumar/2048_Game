@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# 2048 Game (React)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modular React implementation of the classic 2048 game. Play on board sizes from 3x3 up to 8x8, with keyboard and on-screen keypad controls.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Adjustable board size (3x3 to 8x8)
+- Keyboard arrow key controls
+- On-screen keypad arrow buttons
+- Dynamic restart and board resizing
+- Responsive beige-themed design
+- Pure functional game logic for easy testing and extension
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. Clone the repository:
+git clone https://github.com/v-v-sumanth-kumar/2048_Game.git
+cd 2048_Game
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+2. Install dependencies:
+npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Running the Game
 
-### `npm run eject`
+Start the development server:
+npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Open your browser and visit: [http://localhost:3000](http://localhost:3000)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Gameplay Instructions
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- The objective is to combine tiles with the same number until you form a tile with the number 2048.
+- Use keyboard arrow keys or click on the on-screen keypad arrow buttons to slide tiles in the chosen direction.
+- Matching tiles merge into one with their summed value.
+- After every valid move, a new tile (2 or 4) will appear on the board at a random empty spot.
+- Change the board size anytime from the dropdown menu. Changing the size resets the current game.
+- The game ends when no moves are possible or you reach a tile with value 2048.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Implementation Details
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **React** framework with modular structure:
+src/
+components/
+Board.js # Board rendering
+Controls.js # On-screen keypad arrow buttons
+Controls.css # Styles for controls
+Tile.js # Individual tile display
+utils/
+utils.js # Functional game logic (slide, merge, game over detection)
+App.js # Main component managing state and layout
+App.css # Global styles and layout
+index.js # React app entry point
+index.css # Base CSS
 
-### Code Splitting
+- Uses React hooks (`useState`, `useEffect`) for state management.
+- CSS grid is used for flexible board size rendering.
+- Beige background for a warm, clean UI.
+- Keyboard and GUI controls work seamlessly together.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+You can deploy this app easily on hosting platforms such as:
 
-### Making a Progressive Web App
+- **Vercel:** Connect your GitHub repo and click "Deploy"; a public URL will be provided.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
