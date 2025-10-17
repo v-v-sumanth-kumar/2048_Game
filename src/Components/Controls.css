@@ -1,0 +1,36 @@
+.keypad-container {
+  display: inline-block;
+  margin: 20px auto;
+}
+
+.keypad-row {
+  display: flex;
+  justify-content: center;
+}
+
+.keypad-btn {
+  width: 50px;
+  height: 50px;
+  margin: 6px;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 6px;
+  border: 2px solid #999;
+  background: #eee;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+.keypad-btn:active {
+  background: #ccc;
+}
+.keypad-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+.keypad-btn-spacer {
+  width: 50px;
+  height: 50px;
+  margin: 6px;
+  background: transparent;
+  border: none;
+}
